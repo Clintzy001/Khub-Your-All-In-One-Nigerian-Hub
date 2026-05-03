@@ -1,7 +1,11 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { User } from '../types'
+<<<<<<< HEAD
 import { Toaster } from 'sonner'
+=======
+import toast from 'sonner'
+>>>>>>> eef8884 (fix ThemeContext)
 
 interface AuthContextType {
   user: User | null

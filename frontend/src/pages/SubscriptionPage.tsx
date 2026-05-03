@@ -4,7 +4,11 @@ import { useAuth } from '@/contexts/AuthContext'
 import { SubscriptionPlan, UserSubscription } from '@/types'
 import { Check, Crown, Star, Zap, Award, CreditCard, TrendingUp, Shield, AlertCircle, Loader2 } from 'lucide-react'
 import { PaystackButton } from 'react-paystack'
+<<<<<<< HEAD
 import { Toaster } from 'sonner'
+=======
+import toast from 'sonner'
+>>>>>>> eef8884 (fix ThemeContext)
 
 interface SubscriptionManagerProps {
   type: 'vendor' | 'service_provider' | 'job_lister' | 'rental_agent' | 'driver'

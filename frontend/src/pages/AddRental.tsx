@@ -5,7 +5,11 @@ import { useAuth } from '../contexts/AuthContext';
 import { storageService } from '../services/storageService';
 import OpenStreetMap from '../components/Map/OpenStreetMap';
 import { Upload, MapPin, Home, Car, Store, Landmark } from 'lucide-react';
+<<<<<<< HEAD
 import { Toaster } from 'sonner'
+=======
+import toast from 'sonner';
+>>>>>>> eef8884 (fix ThemeContext)
 
 export default function AddRental() {
   const { user } = useAuth();

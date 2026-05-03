@@ -3,7 +3,11 @@ import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 import { storageService } from '../services/storageService';
 import { Wallet as WalletIcon, ArrowUp, ArrowDown, Send, CreditCard, History, Download, QrCode } from 'lucide-react';
+<<<<<<< HEAD
 import { Toaster } from 'sonner'
+=======
+import toast from 'sonner';
+>>>>>>> eef8884 (fix ThemeContext)
 
 interface WalletData {
   balance: number;

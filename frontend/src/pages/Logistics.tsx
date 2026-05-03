@@ -3,7 +3,11 @@ import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import OpenStreetMap from '../components/Map/OpenStreetMap';
 import { Truck, MapPin, Package, Clock, Navigation } from 'lucide-react';
+<<<<<<< HEAD
 import { toast } from "sonner"
+=======
+import toast from 'sonner';
+>>>>>>> eef8884 (fix ThemeContext)
 
 interface Delivery {
   id: string;
