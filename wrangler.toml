@@ -1,0 +1,11 @@
+name = "khub"
+main = "frontend/index.html"
+
+[env.production]
+routes = [
+  { pattern = "khub.com.ng/*", zone_id = "your-zone-id" }
+]
+
+[build]
+command = "cd frontend && npm install && npm run build:cloudflare"
+cwd = "/"
