@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- BASIC META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover" />
+    <meta name="theme-color" content="#5B2EFF" />
+
+    <!-- TITLE -->
+    <title>KHUB - Nigeria's #1 All-in-One Marketplace</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Shop, find jobs, rent properties, hire services, and book logistics on KHUB. Nigeria's trusted all-in-one platform with escrow protection, verified users, and secure payments." />
+    <meta name="keywords" content="KHUB, Nigeria marketplace, ecommerce Nigeria, jobs Nigeria, rentals Nigeria, services Nigeria, llogistics Nigeria, escrow payment, verified sellers, Kano marketplace" />
+    <meta name="author" content="KHUB" />
+    <link rel="canonical" href="https://www.khub.com.ng" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="KHUB - Nigeria's All-in-One Marketplace" />
+    <meta property="og:description" content="Buy, sell, hire, rent, and book services across Nigeria. Secure escrow payments and verified users." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.khub.com.ng" />
+    <meta property="og:image" content="https://www.khub.com.ng/og-image.jpg" />
+    <meta property="og:locale" content="en_NG" />
+    <meta property="og:site_name" content="KHUB" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KHUB - Nigeria's All-in-One Marketplace" />
+    <meta name="twitter:description" content="Shop, find jobs, rent properties, hire service providers, and book logistics on KHUB." />
+    <meta name="twitter:image" content="https://www.khub.com.ng/og-image.jpg" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- LEAFLET MAP CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- PWA SUPPORT -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- STRUCTURED DATA (SEO BOOST) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "KHUB",
+      "url": "https://www.khub.com.ng",
+      "description": "Nigeria's all-in-one marketplace for shopping, jobs, rentals, services, and logistics with escrow protection.",
+      "applicationCategory": "Marketplace",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "NGN"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Nigeria"
+      }
+    }
+    </script>
+
+    <!-- PERFORMANCE OPTIMIZATION -->
+    <link rel="preload" href="/src/main.tsx" as="script" />
+
+  </head>
+
+  <body>
+    <!-- APP ROOT -->
+    <div id="root"></div>
+
+    <!-- MAIN APP SCRIPT -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- PWA SERVICE WORKER -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js")
+            .then(() => console.log("Service Worker Registered"))
+            .catch((err) => console.log("Service Worker Failed:", err));
+        });
+      }
+    </script>
+  </body>
+</html>
